@@ -1,3 +1,4 @@
+
 import NavBar from "../components/Navbar";
 import { FaLinkedinIn, FaGithub, FaJava } from "react-icons/fa";
 
@@ -9,34 +10,28 @@ import reactLogo from "../assets/react.png";
 import spring from "../assets/spring.png";
 import figma from "../assets/figma.png";
 import firebase from "../assets/Firebase.png";
-import profile from "../assets/Profile.jpg";
 
 export default function Home() {
   return (
     <div className="bg-black min-h-screen w-full text-white flex flex-col justify-between">
-      {/* ส่วนของ Navbar ด้านบน */}
+      {/* Navbar */}
       <NavBar pname="h" colorLinkNavbar="#FFF714" />
 
-      {/* ส่วน Hero Section แนวนอนเต็มจอ */}
-      <div className="w-full px-12 md:px-24 py-10 flex flex-row items-center justify-between gap-8 my-auto">
-        {/* ข้อความรายละเอียดด้านซ้าย */}
-        <div className="flex flex-col gap-4 max-w-2xl">
-          <h1 
-            className="text-white text-5xl lg:text-6xl font-bold leading-tight"
-            style={{ color: '#ffffff' }}
-          >
-            Full Stack Web <br />
+      {/* Hero Section */}
+      <div className="w-full px-6 md:px-24 py-16 flex flex-col items-center justify-center text-center my-auto">
+        <div className="flex flex-col items-center gap-5 max-w-3xl">
+          <h1 className="text-white text-5xl lg:text-7xl font-bold leading-tight">
+            Full Stack Web
+            <br />
             Developer !
           </h1>
-          <p 
-            className="text-white text-lg font-normal"
-            style={{ color: '#ffffff' }}
-          >
+
+          <p className="text-white text-lg font-normal">
             Hi, I'm arnon888. A passionate Full Stack Web Developer based in Thailand.
           </p>
 
-          {/* ปุ่มไอคอนโซเชียล */}
-          <div className="flex items-center gap-4 mt-2">
+          {/* Social Icons */}
+          <div className="flex items-center justify-center gap-4 mt-3">
             <a
               href="#"
               target="_blank"
@@ -56,28 +51,15 @@ export default function Home() {
             </a>
           </div>
         </div>
-
-        {/* รูปโปรไฟล์วงกลมด้านขวา */}
-        <div className="w-[380px] h-[380px] lg:w-[420px] lg:h-[420px] rounded-full overflow-hidden bg-neutral-800 flex-shrink-0">
-          <img
-            src={profile}
-            alt="Panizza's profile"
-            className="w-full h-full object-cover"
-          />
-        </div>
       </div>
 
-      {/* ส่วน Tech Stacks ด้านล่างสุด */}
+      {/* Tech Stacks */}
       <div className="w-full pb-10 flex flex-col items-center gap-4">
-        <span 
-          className="text-white text-base font-semibold"
-          style={{ color: '#ffffff' }}
-        >
+        <span className="text-white text-base font-semibold">
           My Tech Stacks
         </span>
 
-        {/* ไอคอนเรียงแนวนอน */}
-        <div className="flex items-center justify-center gap-8">
+        <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 px-4">
           <img src={html5} alt="HTML5" className="h-10 w-auto" />
           <img src={css3} alt="CSS3" className="h-10 w-auto" />
           <img src={js} alt="JavaScript" className="h-10 w-auto" />
